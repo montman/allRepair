@@ -14,7 +14,7 @@ password varchar(16) not null,
 email varchar(50) not null,
 name varchar(30) default null,
 cap varchar(5) default null,
-penis varchar(30) default null,
+city varchar(30) default null,
 address varchar(50) default null,
 userType smallint,
 foreign key (userType) references userType(ID)
@@ -32,8 +32,8 @@ CREATE TABLE requests						--Tabella richieste di riparazione
 ID INT primary key NOT NULL AUTO_INCREMENT,
 priceAccepted boolean,
 repairAccepted boolean,
-prezzo int,
-reqTo varchar(16),						--utente a cui è stata affidata la riparazione
+price int,
+reqTo varchar(16),						--utente a cui Ã¨ stata affidata la riparazione
 reqBy varchar(16),						--utente che ha richiesto la riparazione
 productID int,
 description varchar(250),
