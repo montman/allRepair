@@ -1,12 +1,6 @@
 CREATE DATABASE allRepair;
 use allRepair;
 
-create table userType 						--Tabella tipologia utenti
-(
-ID smallint primary key not null,
-role enum ('user','technic','admin')  default 'user'
-);
-
 create table users						--Tabella utenti
 (
 username varchar(16) primary key not null,
@@ -16,26 +10,25 @@ name varchar(30) default null,
 cap varchar(5) default null,
 city varchar(30) default null,
 address varchar(50) default null,
-userType smallint,
-foreign key (userType) references userType(ID)
+userType enum ('user','technic','admin')  default 'user'
 );
 
 create table devices						--Tabella dispositivo
 (
-ID int primary key not null auto_increment,
+ID int unsigned primary key not null auto_increment,
 company varchar(30) not null,
 serial varchar(30) not null
 );
 
 CREATE TABLE requests						--Tabella richieste di riparazione
 (
-ID INT primary key NOT NULL AUTO_INCREMENT,
+ID INT unsigned primary key NOT NULL AUTO_INCREMENT,
 priceAccepted boolean,
 repairAccepted boolean,
 price int,
 reqTo varchar(16),						--utente a cui è stata affidata la riparazione
 reqBy varchar(16),						--utente che ha richiesto la riparazione
-productID int,
+productID int unsigned,
 description varchar(250),
 year varchar(4),
 month int,
