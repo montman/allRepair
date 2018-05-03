@@ -32,7 +32,7 @@ CREATE TABLE requests						--Tabella richieste di riparazione
 ID INT primary key NOT NULL AUTO_INCREMENT,
 priceAccepted boolean,
 repairAccepted boolean,
-price int,
+prezzo int,
 reqTo varchar(16),						--utente a cui è stata affidata la riparazione
 reqBy varchar(16),						--utente che ha richiesto la riparazione
 productID int,
