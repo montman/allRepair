@@ -14,7 +14,7 @@ password varchar(16) not null,
 email varchar(50) not null,
 name varchar(30) default null,
 cap varchar(5) default null,
-city varchar(30) default null,
+penis varchar(30) default null,
 address varchar(50) default null,
 userType smallint,
 foreign key (userType) references userType(ID)
