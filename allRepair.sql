@@ -1,7 +1,7 @@
-CREATE DATABASE allRepair;
+﻿CREATE DATABASE allRepair;
 use allRepair;
 
-create table users						--Tabella utenti
+create table users						#Tabella utenti
 (
 username varchar(16) primary key not null,
 password varchar(16) not null,
@@ -13,21 +13,21 @@ address varchar(50) default null,
 userType enum ('user','technic','admin')  default 'user'
 );
 
-create table devices						--Tabella dispositivo
+create table devices					 #Tabella dispositivo
 (
 ID int unsigned primary key not null auto_increment,
 company varchar(30) not null,
 serial varchar(30) not null
 );
 
-CREATE TABLE requests						--Tabella richieste di riparazione
+CREATE TABLE requests						#Tabella richieste di riparazione
 (
 ID INT unsigned primary key NOT NULL AUTO_INCREMENT,
 priceAccepted boolean,
 repairAccepted boolean,
 price int,
-reqTo varchar(16),						--utente a cui è stata affidata la riparazione
-reqBy varchar(16),						--utente che ha richiesto la riparazione
+reqTo varchar(16),						#utente a cui è stata affidata la riparazione
+reqBy varchar(16),						#utente che ha richiesto la riparazione
 productID int unsigned,
 description varchar(250),
 year varchar(4),
@@ -38,11 +38,8 @@ foreign key (productID) references devices(ID),
 foreign key (reqBy) references users(username)
 );
 
---valori di esempio
+#valori di esempio
 
-insert into userType (ID) values (0);
-insert into userType values (1, 'technic'); 
-insert into userType values (2, 'admin') ;
 
 insert into users values ('admin_01','Magiclub','amatipierluigi@gmail.com','Pierluigi Amati','64033','Bisenti','Via San Nicola, 59',2);
 
