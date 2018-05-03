@@ -41,10 +41,10 @@ foreign key (reqBy) references users(username)
 #valori di esempio
 
 
-insert into users values ('admin_01','Magiclub','amatipierluigi@gmail.com','Pierluigi Amati','64033','Bisenti','Via San Nicola, 59',2);
+insert into users values ('admin_01','Magiclub','amatipierluigi@gmail.com','Pierluigi Amati','64033','Bisenti','Via San Nicola, 59','admin');
 
-insert into users values ('tech_01','12345678','','Giacomo Piru','00100','Roma','Via Perugia, 88',1);
-insert into users values ('tech_02','12345678','','Ferninando Flash','00100','Roma','Via Ugo Foscolo, 234',1);
-insert into users values ('tech_03','12345678','','Giorgiorgio Speed','00100','Roma','Via Giofonchio, 6',1);
-insert into users values ('tech_04','12345678','','Stegosandro Rapid','00100','Roma','Via Roma, 59',1);
-insert into users values ('tech_05','12345678','','Antonino Blu','00100','Roma','Via Ciccio Valenti, 1',1);
+insert into users values ('tech_01','12345678','','Giacomo Piru','00100','Roma','Via Perugia, 88','tech');
+insert into users values ('tech_02','12345678','','Ferninando Flash','00100','Roma','Via Ugo Foscolo, 234','tech');
+insert into users values ('tech_03','12345678','','Giorgiorgio Speed','00100','Roma','Via Giofonchio, 6','tech');
+insert into users values ('tech_04','12345678','','Stegosandro Rapid','00100','Roma','Via Roma, 59','tech');
+insert into users values ('tech_05','12345678','','Antonino Blu','00100','Roma','Via Ciccio Valenti, 1','tech');
