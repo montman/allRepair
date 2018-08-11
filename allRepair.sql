@@ -48,3 +48,6 @@ insert into users values ('tech_02','12345678','','Ferninando Flash','00100','Ro
 insert into users values ('tech_03','12345678','','Giorgiorgio Speed','00100','Roma','Via Giofonchio, 6','technic');
 insert into users values ('tech_04','12345678','','Stegosandro Rapid','00100','Roma','Via Roma, 59','technic');
 insert into users values ('tech_05','12345678','','Antonino Blu','00100','Roma','Via Ciccio Valenti, 1','technic');
+
+insert into users values ('user_01','12345678','','Gianfredo Tosti','00100','Roma','Via Marina, 13','user');
+insert into users values ('user_02','12345678','','Stanislao Valenti','00100','Roma','Via Milano, 103','user');
