@@ -17,7 +17,7 @@ create table devices					 #Tabella dispositivo
 (
 ID int unsigned primary key not null auto_increment,
 company varchar(30) not null,
-serial varchar(30) not null
+model varchar(30) not null
 );
 
 CREATE TABLE requests						#Tabella richieste di riparazione
